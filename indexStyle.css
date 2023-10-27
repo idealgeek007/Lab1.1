@@ -6,10 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Align items to the top of the container */
   width: 100%;
-  height: 1000px;
-  /* This will make the header take the full height of the viewport. */
+  height: 150px;
   text-align: center;
   /* Center the text horizontally within the container. */
 }
@@ -39,7 +37,7 @@ h1 {
 /* Animation */
 h1 {
   animation: animated-text 4s ease-in 1s 1 normal both,
-    animated-cursor 600ms steps(30, end) infinite;
+    animated-cursor 600ms steps(30, end) 200;
 }
 
 /* text animation */
@@ -64,4 +62,21 @@ h1 {
   to {
     border-right-color: transparent;
   }
+}
+
+
+h2 {
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.image_container {
+  display: inline-block;
+  width: auto;
+  align-content: space-evenly;
+  height: 50px;
+  padding-right: 50px;
 }
